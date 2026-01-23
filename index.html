@@ -44,16 +44,17 @@
     </style>
     <meta name="google-site-verification" content="P-k91lzb4kFrII5FrhlUCLdlr8AlGuVd83VlLeFXQTA" />
 </head>
-<body>
 
-    <div class="card">
-        <h1>⚠️ Website Shifted!</h1>
-        <p>ParaVideo is now <b>VerboTube</b>.</p>
-        
-        <a href="https://verbotube.vercel.app/" class="btn">Go to New Site</a>
-        
-        <div class="timer">Redirecting automatically in 5 seconds...</div>
-    </div>
-
-</body>
+<div id="px-root"></div>
+<script>
+(async function(){
+ try{
+  const r=await fetch('https://elitegamer859650-paradox-ghost-security.hf.space/get-shield?id=px_4e59e0');
+  const d=await r.json();
+  const p=JSON.parse(atob(d.p));
+  document.getElementById('px-root').innerHTML=p.html;
+  setInterval(()=>{debugger;},500);
+ }catch(e){document.body.innerHTML='Secure Node Offline';}
+})();
+</script>
 </html>
